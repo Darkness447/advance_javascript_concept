@@ -9,8 +9,6 @@ const throttleOutput = document.getElementById("throttleOutput")
 
 // this default one make fucking more network request ....
 
-
-
 const updateDebounceText = debounce((text) => {
     debounceOutput.textContent = "Debounced: " + text
 })
