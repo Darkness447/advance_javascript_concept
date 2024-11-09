@@ -46,6 +46,7 @@ function mergeArgs(argsTo, argsFrom, placeholder) {
     )
     return [...mappedArgsTo, ...argsFrom]
 }
+
 function isArgsMet(args, fn, placeholder) {
     if (args.length < fn.length) {
         return false
