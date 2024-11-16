@@ -15,7 +15,6 @@ function fetchPromise(value, error) {
 
 function PromiseAllWrapper(args) {
     const result = [];
-
     return new Promise((resolve, reject) => {
         for (let x of args) {
             x.then((data) => {
@@ -26,10 +25,7 @@ function PromiseAllWrapper(args) {
             }).catch((error) => {
                 reject("Something went Wrong")
             })
-
         }
-
-
     })
 }
 
